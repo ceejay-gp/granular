@@ -172,3 +172,25 @@ footer a {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+/* Mobile Styles */
+@media screen and (max-width:760px) {
+  .scroll-effect {
+    background-attachment: scroll;
+  }
+
+  nav {
+    position: static;
+    padding-top: 50px;
+  }
+
+  .subscribe, .hightlight, .feature {
+    padding: 20px;
+  }
+
+  .button, .email {
+    width: 100%
+  }
+
+  /* Media Style ends here  */
+}
