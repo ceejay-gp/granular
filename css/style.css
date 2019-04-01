@@ -68,10 +68,10 @@ nav a:hover {
   padding: 50px 0;
 }
 
-h2 {
+h2, h4 {
   text-transform: uppercase;
   font-size: 26px;
-  font-weight: 300;
+  font-weight: 700;
   margin-bottom: 40px;
 }
 
@@ -141,7 +141,7 @@ h3 {
   border: 2px solid #333333
 }
 
-.button {
+.button, button {
   width: 60%;
   background-color: transparent;
   border: 2px solid #333333;
@@ -171,6 +171,87 @@ footer a {
   margin: 5px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+/* About page */
+.about {
+  background-image: url(../images/three.jpg);
+}
+
+.gallery {
+  /* flexbox allows us t o align items vertically and horizontally */
+  /* to use flexbox
+  1. apply display: flex */
+  display: flex;
+  /* 2. set the flex-direction */
+  flex-direction: row;
+  /* 3. align the items either horizontonally using justify-content or the verticallly using aligh-items */
+  justify-content: center;
+  /* 4. set whether you want the items to wrap on to different lines */
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  height: 200px;
+  margin: 0 0 20px 20px;
+}
+
+/* Pricing */
+.pricing {
+  background-image: url(../images/header.jpg);
+  height: auto;
+  padding: 50px 0;
+  color: white;
+}
+
+/* pricing cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card {
+  background: #f2f2f2;
+  border-radius: 5px;
+  margin: 10px;
+  padding-bottom: 50px;
+  flex-basis: 250px;
+}
+
+h4 {
+  background: #808080;
+  height: 80px;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+li {
+  height: 20px;
+  margin: 10px auto;
+}
+
+.card-big {
+  transform: scale(1.12);
+}
+
+.card-big button {
+  background-color: #EEDE00;
+}
+
+button:hover {
+  background-color: #333333;
+  color: white;
 }
 
 /* Mobile Styles */
